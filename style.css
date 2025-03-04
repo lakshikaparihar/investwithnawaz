@@ -1,108 +1,75 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
 
-/* for image carasoul 
-.card{
+
+ *{margin: 0;}
+
+ .mainmain{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+ }
+
+.moneybackMainContainer{
+  display: flex;
+  width: 70vw;
+}
+
+.moneybackImgContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+
+.moneybackLogo{
+  height:350px;
+}
+
+.moneybackParaContainer{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: aqua;
-  height: 234px ;
-  width: 372px;
-  border-radius: 10px;
+  align-items: flex-start;
+  width: 50vw;
 }
 
-.mainParagraph{
-  font-size: 30px;
-  
-  font-family: "Ubuntu", sans-serif;
+.moneybackParaContainer p{
+  width: 25vw;
+  font-size: large;
+  margin-bottom: 15px;
 }
- -----------------------------
 
-* {
-  box-sizing: border-box;
+.moneybackParaContainer .moneybackParaTwo{
+  font-size: 46px;
+}
+
+#moenybackFlexContainer{
+  display: flex;
+  justify-content: space-between;
+  width: 25vw;
+  margin: 10px 0px;
+}
+
+#moenybackFlexContainer p{
+  font-size: medium;
   margin: 0;
   padding: 0;
-}
-.carousel-container {
-  overflow: hidden;
-  width: 100%;
-  margin: auto;
-  position: relative;
-  background-color: rgb(235 241 255);
-  padding: 50px 0px;
-}
-.carousel {
-  display: flex;
-  width: 200%;
-  animation: scroll 10s linear infinite;
-}
-.carousel img {
-  width: 350px;
-  height: 350px;
-  margin: 10px;
-  border-radius: 4px;
-}
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+
 }
 
-
-
-.studentTest{
-  text-align: center;
-  font-size: 45px;
-  margin-top: 70px;
-  margin-bottom: 20px;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 100;
-}
-
-.studentTestButtons{
-  display: flex;
-  justify-content: center;
-  gap:14px;
-}
-
-.studentTestButtons button{
-  font-size: 12px;
-  background-color: white;
-  border-radius: 10px;
-  padding: 10px;
-  font-family: "Ubuntu", sans-serif;
-  border-color: rgb(59 130 246);
-  padding: 20px 35px;
-}
-
-.studentTestButtons .linkedin{
-  background-color: rgb(33 96 252);
-  color: white;
-  cursor: pointer;
+.moneybackButton{
+  width: 26vw;
+  font-size: 15px;
+  padding: 14px 80px;
+  border-radius: 50px;
   border-style: none;
-
-}
-
- for exclusive bonuses
-.exclusiveBonuses{
-  display: flex;
-  justify-content: center;
-  background-color:  rgb(33 96 252);
-  font-family: "Ubuntu", sans-serif;
+  background-color: blue;
+  color: white;
 }
 
 
 
-.gridExcluiveBonuses{
-  display: grid;
-  
-}   --*/
-
- /* for faq's */
-
- *{
-  margin: 0;
-}
 
 
 .faqHeading{
