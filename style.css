@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+
+/* for image carasoul 
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: aqua;
+  height: 234px ;
+  width: 372px;
+  border-radius: 10px;
+}
+
+.mainParagraph{
+  font-size: 30px;
+  
+  font-family: "Ubuntu", sans-serif;
+}
+ -----------------------------
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  background-color: rgb(235 241 255);
+  padding: 50px 0px;
+}
+.carousel {
+  display: flex;
+  width: 200%;
+  animation: scroll 10s linear infinite;
+}
+.carousel img {
+  width: 350px;
+  height: 350px;
+  margin: 10px;
+  border-radius: 4px;
+}
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+
+.studentTest{
+  text-align: center;
+  font-size: 45px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 100;
+}
+
+.studentTestButtons{
+  display: flex;
+  justify-content: center;
+  gap:14px;
+}
+
+.studentTestButtons button{
+  font-size: 12px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Ubuntu", sans-serif;
+  border-color: rgb(59 130 246);
+  padding: 20px 35px;
+}
+
+.studentTestButtons .linkedin{
+  background-color: rgb(33 96 252);
+  color: white;
+  cursor: pointer;
+  border-style: none;
+
+}
+
+ for exclusive bonuses
+.exclusiveBonuses{
+  display: flex;
+  justify-content: center;
+  background-color:  rgb(33 96 252);
+  font-family: "Ubuntu", sans-serif;
+}
+
+
+
+.gridExcluiveBonuses{
+  display: grid;
+  
+}   --*/
+
+ /* for faq's */
+
+ *{
+  margin: 0;
+}
+
+
+.faqHeading{
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.faqMainContainer{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+   
+}
+
+.faqContainer{
+    padding: 24px 0;
+    background-color: rgb(235 241 255);
+    width: 75vw;
+    border-radius: 5px;
+}
+
+
+summary {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 0.25rem;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+    font-family: "Ubuntu", sans-serif;
+  }
+  details > summary::after {
+    position: absolute;
+    content: "+";
+    right: 20px;
+  }
+  details[open] > summary::after {
+    position: absolute;
+    content: "-";
+    right: 20px;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+
+   
+  details p{
+    margin-left: 15px;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  /* animations */
+
+  details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  @keyframes sweep {
+    0%    {opacity: 0; margin-top: -10px}
+    100%  {opacity: 1; margin-top: 0px}
+  }
+ 
