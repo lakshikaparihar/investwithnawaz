@@ -1,32 +1,33 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
 
 
- *{margin: 0;}
+* {
+  margin: 0;
+}
 
- .mainmain{
+.mainmain {
   display: flex;
   width: 100%;
   justify-content: center;
- }
+}
 
-.moneybackMainContainer{
+.moneybackMainContainer {
   display: flex;
   width: 70vw;
 }
 
-.moneybackImgContainer{
+.moneybackImgContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50vw;
 }
 
-.moneybackLogo{
-  height:350px;
+.moneybackLogo {
+  height: 350px;
 }
 
-.moneybackParaContainer{
+.moneybackParaContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,31 +35,31 @@
   width: 50vw;
 }
 
-.moneybackParaContainer p{
+.moneybackParaContainer p {
   width: 25vw;
   font-size: large;
   margin-bottom: 15px;
 }
 
-.moneybackParaContainer .moneybackParaTwo{
+.moneybackParaContainer .moneybackParaTwo {
   font-size: 46px;
 }
 
-#moenybackFlexContainer{
+#moenybackFlexContainer {
   display: flex;
   justify-content: space-between;
   width: 25vw;
   margin: 10px 0px;
 }
 
-#moenybackFlexContainer p{
+#moenybackFlexContainer p {
   font-size: medium;
   margin: 0;
   padding: 0;
 
 }
 
-.moneybackButton{
+.moneybackButton {
   width: 26vw;
   font-size: 15px;
   padding: 14px 80px;
@@ -68,74 +69,467 @@
   color: white;
 }
 
+@media screen and (max-width: 1080px) {
+  body {
 
+    * {
+      margin: 0;
+    }
 
+    .mainmain {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
 
+    .moneybackMainContainer {
+      display: flex;
+      width: 70vw;
+    }
 
-.faqHeading{
-    text-align: center;
-    font-size: xx-large;
-    margin-bottom: 20px;
-    font-family: "Ubuntu", sans-serif;
+    .moneybackImgContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50vw;
+    }
+
+    .moneybackLogo {
+      height: 350px;
+    }
+
+    .moneybackParaContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 50vw;
+    }
+
+    .moneybackParaContainer p {
+      width: 25vw;
+      font-size: large;
+      margin-bottom: 15px;
+    }
+
+    .moneybackParaContainer .moneybackParaTwo {
+      font-size: 46px;
+    }
+
+    #moenybackFlexContainer {
+      display: flex;
+      justify-content: space-between;
+      width: 25vw;
+      margin: 10px 0px;
+    }
+
+    #moenybackFlexContainer p {
+      font-size: medium;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .moneybackButton {
+      width: 24vw;
+      font-size: 15px;
+      padding: 13px 53px;
+      border-radius: 50px;
+      border-style: none;
+      background-color: blue;
+      color: white;
+    }
+  }
 }
 
-.faqMainContainer{
-    display:flex;
-    flex-direction: column;
-    gap:30px;
-    align-items: center;
-   
+
+
+@media screen and (max-width: 900px) {
+  body {
+
+    * {
+      margin: 0;
+    }
+
+    .mainmain {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .moneybackMainContainer {
+      display: flex;
+      width: 70vw;
+    }
+
+    .moneybackImgContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50vw;
+    }
+
+    .moneybackLogo {
+      height: 290px;
+    }
+
+    .moneybackParaContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 50vw;
+    }
+
+    .moneybackParaContainer p {
+      width: 25vw;
+      font-size: large;
+      margin-bottom: 15px;
+    }
+
+    .moneybackParaContainer .moneybackParaTwo {
+      font-size: 46px;
+    }
+
+    #moenybackFlexContainer {
+      display: flex;
+      justify-content: space-between;
+      width: 25vw;
+      margin: 10px 0px;
+    }
+
+    #moenybackFlexContainer p {
+      font-size: medium;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .moneybackButton {
+      width: 24vw;
+      font-size: 14px;
+      padding: 8px 36px;
+      border-radius: 50px;
+      border-style: none;
+      background-color: blue;
+      color: white;
+    }
+  }
 }
 
-.faqContainer{
-    padding: 24px 0;
-    background-color: rgb(235 241 255);
-    width: 75vw;
-    border-radius: 5px;
+
+@media screen and (max-width: 750px) {
+  body {
+
+    * {
+      margin: 0;
+    }
+
+    .mainmain {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .moneybackMainContainer {
+      display: flex;
+      width: 70vw;
+      flex-direction: column-reverse;
+      align-self: center;
+
+    }
+
+    .moneybackImgContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 68vw;
+    }
+
+    .moneybackLogo {
+      height: 350px;
+    }
+
+    .moneybackParaContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: baseline;
+      width: 50vw;
+
+    }
+
+    .moneybackParaContainer p {
+      width: 80vw;
+      font-size: large;
+      margin-bottom: 15px;
+    }
+
+    .moneybackParaContainer .moneybackParaTwo {
+      font-size: 46px;
+    }
+
+    #moenybackFlexContainer {
+      display: flex;
+      justify-content: space-between;
+      width: 80vw;
+      margin: 10px 0px;
+    }
+
+    #moenybackFlexContainer p {
+      font-size: medium;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .moneybackButton {
+      width: 70vw;
+      font-size: 15px;
+      padding: 14px 80px;
+      border-radius: 50px;
+      border-style: none;
+      background-color: blue;
+      color: white;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 500px) {
+  body {
+
+    * {
+      margin: 0;
+    }
+
+    .mainmain {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .moneybackMainContainer {
+      display: flex;
+      width: 70vw;
+      flex-direction: column-reverse;
+      align-self: center;
+
+    }
+
+    .moneybackImgContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50vw;
+    }
+
+    .moneybackLogo {
+      height: 350px;
+    }
+
+    .moneybackParaContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: baseline;
+      width: 50vw;
+
+    }
+
+    .moneybackParaContainer p {
+      width: 80vw;
+      font-size: large;
+      margin-bottom: 15px;
+    }
+
+    .moneybackParaContainer .moneybackParaTwo {
+      font-size: 46px;
+    }
+
+    #moenybackFlexContainer {
+      display: flex;
+      justify-content: space-between;
+      width: 80vw;
+      margin: 10px 0px;
+    }
+
+    #moenybackFlexContainer p {
+      font-size: medium;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .moneybackButton {
+      width: 70vw;
+      font-size: 15px;
+      padding: 14px 80px;
+      border-radius: 50px;
+      border-style: none;
+      background-color: blue;
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  body {
+
+    * {
+      margin: 0;
+    }
+
+    .mainmain {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .moneybackMainContainer {
+      display: flex;
+      width: 70vw;
+      flex-direction: column-reverse;
+      align-self: center;
+
+    }
+
+    .moneybackImgContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50vw;
+    }
+
+    .moneybackLogo {
+      height: 260px;
+    }
+
+    .moneybackParaContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: baseline;
+      width: 50vw;
+
+    }
+
+    .moneybackParaContainer p {
+      width: 80vw;
+      font-size: large;
+      margin-bottom: 15px;
+    }
+
+    .moneybackParaContainer .moneybackParaTwo {
+      font-size: 46px;
+    }
+
+    #moenybackFlexContainer {
+      display: flex;
+      justify-content: space-between;
+      width: 80vw;
+      margin: 10px 0px;
+    }
+
+    #moenybackFlexContainer p {
+      font-size: medium;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .moneybackButton {
+      width: 69vw;
+      font-size: 15px;
+      padding: 14px 80px;
+      border-radius: 50px;
+      border-style: none;
+      background-color: blue;
+      color: white;
+    }
+  }
+}
+
+
+
+
+
+
+.faqHeading {
+  text-align: center;
+  font-size: xx-large;
+  margin-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.faqMainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+
+}
+
+.faqContainer {
+  padding: 24px 0;
+  background-color: rgb(235 241 255);
+  width: 75vw;
+  border-radius: 5px;
 }
 
 
 summary {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #333;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    outline: none;
-    border-radius: 0.25rem;
-    text-align: left;
-    cursor: pointer;
-    position: relative;
-    list-style: none;
-    font-family: "Ubuntu", sans-serif;
-  }
-  details > summary::after {
-    position: absolute;
-    content: "+";
-    right: 20px;
-  }
-  details[open] > summary::after {
-    position: absolute;
-    content: "-";
-    right: 20px;
-  }
-  details > summary::-webkit-details-marker {
-    display: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border-radius: 0.25rem;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  list-style: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+details>summary::after {
+  position: absolute;
+  content: "+";
+  right: 20px;
+}
+
+details[open]>summary::after {
+  position: absolute;
+  content: "-";
+  right: 20px;
+}
+
+details>summary::-webkit-details-marker {
+  display: none;
+}
+
+
+details p {
+  margin-left: 15px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* animations */
+
+details[open] summary~* {
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-top: -10px
   }
 
-   
-  details p{
-    margin-left: 15px;
-    font-family: "Ubuntu", sans-serif;
+  100% {
+    opacity: 1;
+    margin-top: 0px
   }
-
-  /* animations */
-
-  details[open] summary ~ * {
-    animation: sweep .5s ease-in-out;
-  }
-  @keyframes sweep {
-    0%    {opacity: 0; margin-top: -10px}
-    100%  {opacity: 1; margin-top: 0px}
-  }
- 
+}
