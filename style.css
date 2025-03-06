@@ -1,245 +1,171 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   margin: 0;
-  padding: 20px;
+  padding: 0;
   background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.mainmain {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.moneybackMainContainer {
-  display: flex;
-  width: 70vw;
-}
-
-.moneybackImgContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50vw;
-}
-
-.moneybackLogo {
-  height: 350px;
-}
-
-.moneybackParaContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 50vw;
-}
-
-.moneybackParaContainer p {
-  width: 25vw;
-  font-size: large;
-  margin-bottom: 15px;
-}
-
-.moneybackParaContainer .moneybackParaTwo {
-  font-size: 46px;
-}
-
-#moneybackFlexContainer {
-  display: flex;
-  justify-content: space-between;
-  width: 25vw;
-  margin: 10px 0;
-}
-
-.moneybackButton {
-  width: 26vw;
-  font-size: 15px;
-  padding: 14px 80px;
-  border-radius: 50px;
-  border: none;
-  background-color: blue;
-  color: white;
-}
-
-@media screen and (max-width: 750px) {
-  .moneybackMainContainer {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .moneybackImgContainer {
-    width: 68vw;
-  }
-  .moneybackParaContainer {
-    width: 80vw;
-    align-items: baseline;
-  }
-  #moneybackFlexContainer {
-    width: 80vw;
-  }
-  .moneybackButton {
-    width: 70vw;
-  }
-}
-
-.faqHeading {
-  margin-top: 100px;
-  text-align: center;
-  font-size: xx-large;
-  margin-bottom: 20px;
-  font-family: "Ubuntu", sans-serif;
-}
-
-.faq-container {
-  width: 90%;
-  max-width: 1000px;
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-details {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 20px;
-  padding-bottom: 15px;
-}
-
-summary {
-  font-weight: bold;
-  cursor: pointer;
-  padding: 18px;
-  font-size: 18px;
-  background: rgba(0, 123, 255, 0.1);
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-summary:hover {
-  background: rgba(0, 123, 255, 0.2);
-  color: #007BFF;
-}
-
-details[open] summary {
-  color: #007BFF;
-}
-
-summary::after {
-  content: "+";
-  font-size: 22px;
-  font-weight: bold;
-  margin-left: auto;
-  padding-left: 30px;
-}
-
-details[open] summary::after {
-  content: "−";
-}
-
-
+/* Container styling */
 .container {
-  margin: 0;
-  width: 100vw;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5f5f5;
+  width: 100%;
   text-align: center;
-  
+  padding: 20px;
 }
 
-
+/* Heading and paragraph */
 .page h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
-  max-width: 100%;
-  text-align: center;
-  padding-top: 20px;
-  position: relative;
-    z-index: 10;
- 
-  
-}
-
-
-.highlight{
-  background-color: #007bff;
 }
 
 .page p {
   font-size: 1.2em;
-  margin-bottom: 20px;
-  
 }
 
+/* Box styling */
 .box {
   display: inline-block;
   padding: 10px 20px;
   background-color: #f0eace;
-  color: #020202;
-  text-decoration: none;
-  border-radius: 5px;
   border: 2px solid rgb(231, 210, 170);
-}
-
-.box .refund {
-  border: 1px solid rgb(152, 230, 35);
-  display: flex;
-  align-items: center;
-  margin-top: .5rem;
-  background-color: rgb(211, 227, 187);
   border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Refund info */
+.refund {
+  margin-top: 10px;
   padding: 5px;
+  background-color: rgb(211, 227, 187);
+  border: 1px solid rgb(152, 230, 35);
+  border-radius: 8px;
 }
 
-.book{
+/* Buttons */
+.book,
+.moneybackButton {
+  padding: 12px 40px;
+  border-radius: 50px;
+  background-color: #007bff;
+  color: white;
   border: none;
-padding: 10px 40px;
-border-radius: 50px;
-font-size: 16px;
-cursor: pointer;
-background-color: #007bff;
-color: white;
-font-weight: bold;
-transition: 0.3s ease;
-transition: transform .3s;
-margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease;
 }
 
+.book:hover,
+.moneybackButton:hover {
+  transform: scale(1.05);
+}
 
-
-.img {
+/* Moneyback Section */
+.moneybackMainContainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-
+  margin-top: 40px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.img img {
+/* Image container */
+.moneybackImgContainer,
+.moneybackParaContainer {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Make images fully responsive */
+.moneybackLogo {
   max-width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-@media only screen and (max-width: 768px) {
-  .img {
-      padding: 5px;
-  }
-
-  .img img {
-      max-width: 100%;
-      height: auto;
-  }
+/* FAQ Section */
+.faq-container {
+  width: 90%;
+  max-width: 1000px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 130px;
 }
 
+/* FAQ details */
+details {
+  margin-bottom: 20px;
+}
+
+summary {
+  padding: 15px;
+  background: rgba(0, 123, 255, 0.1);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+summary:after {
+  content: "+";
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+details[open] summary:after {
+  content: "−";
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cost {
+  font-size: 18px;
+  text-decoration: line-through;
+  margin-left: 8px;
+  color: darkgrey;
+  }
+
+.register button:hover {
+  background: #bac2c5;
+}
+
+.register button {
+  border: none;
+  padding: 10px 40px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: white;
+  color: #007bff;
+  font-weight: bold;
+  border: 2px solid white;
+  transition: 0.3s ease;
+  transition: transform .3s;
+  margin-right: 20px;
+  }
+  
 .bottom-nav{
   width: 100vw;
   position: fixed;
@@ -255,44 +181,151 @@ margin-top: 10px;
   
 }
 
-.price1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 20px;
-}
-.price {
-font-size: 28px;
-font-weight: bold;
+
+/* 📱 Responsive Styles */
+@media screen and (max-width: 768px) {
+  .moneybackMainContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .moneybackParaContainer p,
+  #moneybackFlexContainer {
+    width: 100%;
+  }
+
+  .faq-container {
+    width: 95%;
+  }
 }
 
-.cost {
-font-size: 18px;
-text-decoration: line-through;
-margin-left: 8px;
-color: darkgrey;
+.nawazImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  .nawazImage {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+.moneybackParaContainer {
+  flex: 1;
+  padding: 40px;
+  text-align: left;
+  /* Align text to the left for a professional look */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+  /* Prevents text from stretching too much */
+}
+
+/* Styling for the headings */
+.moneybackParaContainer p:first-child {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.moneybackParaTwo {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Paragraph text */
+.moneybackParaContainer p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Key points styling */
+#moneybackFlexContainer {
+  margin-top: 15px;
+}
+
+#moneybackFlexContainer p {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* 🛠 Responsive Styles */
+@media screen and (max-width: 768px) {
+  .moneybackParaContainer {
+    text-align: center;
+    /* Center align text on smaller screens */
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .moneybackParaContainer p {
+    font-size: 1em;
+  }
+
+  .moneybackParaTwo {
+    font-size: 1.3em;
+  }
+}
+
+.highlight {
+  color: #007bff;
+}
+
+#moneybackFlexContainer p {
+  color: black;
+}
+
+.refund-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* Ensures responsiveness */
+  width: 100%;
+  max-width: 400px;
+  /* Adjust width as needed */
+  margin: 10px auto;
+  font-size: 1.0em;
+}
+
+.refund-info span::before {
+  content: "✔";
+  color: green;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.moneybackParaTwo {
+  font-weight: normal;
 }
 
 .text {
-font-size: 14px;
-margin-top: 4px;
-}
+  font-size: 14px;
+  margin-top: 4px;
+  }
 
-.register button {
-border: none;
-padding: 10px 40px;
-border-radius: 50px;
-font-size: 16px;
-cursor: pointer;
-background-color: white;
-color: #007bff;
-font-weight: bold;
-border: 2px solid white;
-transition: 0.3s ease;
-transition: transform .3s;
-margin-right: 20px;
-}
+.price1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+  }
 
-.register button:hover {
-background-color: #bac2c5;
-}
+.price {
+  font-size: 28px;
+  font-weight: bold;
+  }
