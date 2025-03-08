@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -17,14 +17,12 @@
             <div class="date">13 April, 11 AM 2 hours</div>
             <div class="refund">💰 100% Moneyback guarantee</div>
         </div>
-        <div>
-          <button class="book">Book Now</button> 
-        </div>
       <div class="img">
         <img class="nawazImage" src="start-today (2).png" alt="image of a person wearing red shirt">
       </div>
-        </div> 
-      </div>
+    </div> 
+  </div>
+
   <div class="mainmain">
     <div class="moneybackMainContainer">
       <div class="moneybackParaContainer">
@@ -37,7 +35,6 @@
             <span>100% Refund Available</span>
             <span>7 days refund available</span>
           </div>
-        <button class="moneybackButton">Register Now</button>
       </div>
       <div class="moneybackImgContainer">
         <img src="https://onepercentclub.io/assets/creator/money_back.svg" class="moneybackLogo" alt="money back logo" />
@@ -80,11 +77,27 @@
       </div>
     </div>
     <div class="register">
-      <button>Register Now</button> 
+      <!-- Placeholder for the payment button -->
+      <button id="register-now-bottom" class="book">Register Now</button>
+      <div id="payment-button-container"></div>
     </div>
+  </div> 
 
-
-</div> 
+  <!-- Modal Structure -->
+  <div id="paymentModal" class="modal">
+    <div class="modal-content">
+      <!-- <span class="close">&times;</span> -->
+      <div id="modal-info">
+        <img class="Modal-img" src="nawaz.jpeg" alt="image of a person wearing red shirt">
+        <span class="alert">🔥 Limited Seats - Secure Yours Now!</span>
+        <p class="p1"><img src="icons8-calendar-80.png">13 April 2025 | 2:00 PM - 5:00 PM</p>
+        <p class="p2">📍Live Online Workshop On Zoom</p>
+      </div>
+      <div id="modal-payment-button-container"></div>
+      <p class="p3">100% refund if not satisfied</p>
+    </div>
+  
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
-
